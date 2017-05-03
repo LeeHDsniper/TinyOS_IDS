@@ -1,0 +1,4 @@
+all: 
+	g++ -g -c -o test.o test.c -I/opt/tinyos-2.1.2/tos/lib/tossim/
+	g++ -o test test.o ./simbuild/micaz/tossim.o ./simbuild/micaz/sim.o ./simbuild/micaz/c-support.o
+
